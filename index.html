@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>To Do List</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class='calender'>
+    <div class="calendarMetadata">
+      <button type='button' class='button-solid' id="previousMonthButton">←</button>
+      <div class="dateDisplay" id="monthDisplay">April</div>
+      <div>-</div>
+      <div class="dateDisplay" id="yearDisplay">2022</div>
+      <button type='button' class='button-solid' id="nextMonthButton">→</button>
+    </div>
+
+    <div style="display:flex;">
+      <div class="daysOfTheWeek" id="sunday">
+        <p> Sunday</p>
+      </div>
+      <div class="daysOfTheWeek" id="monday">
+        <p> Monday</p>
+      </div>
+      <div class="daysOfTheWeek" id="tuesday">
+        <p> Tuesday</p>
+      </div>
+      <div class="daysOfTheWeek" id="wednesday">
+        <p> Wednesday</p>
+      </div>
+      <div class="daysOfTheWeek" id="thursday">
+        <p> Thursday</p>
+      </div>
+      <div class="daysOfTheWeek" id="friday">
+        <p> Friday</p>
+      </div>
+      <div class="daysOfTheWeek" id="saturday">
+        <p> Saturday</p>
+      </div>
+    </div>
+
+    <div class='row' id='000'>
+      <div class="cell" id="0">
+        <p class='dateText' id='00'></p>
+      </div>
+      <div class="cell" id="1">
+        <p class='dateText' id='01'></p>
+      </div>
+      <div class="cell" id="2">
+        <p class='dateText' id='02'></p>
+      </div>
+      <div class="cell" id="3">
+        <p class='dateText' id='03'></p>
+      </div>
+      <div class="cell" id="4">
+        <p class='dateText' id='04'></p>
+      </div>
+      <div class="cell" id="5">
+        <p class='dateText' id='05'></p>
+      </div>
+      <div class="cell" id="6">
+        <p class='dateText' id='06'></p>
+      </div>
+    </div>
+    <div class='row' id='001'>
+      <div class="cell" id="7">
+        <p class='dateText' id='07'></p>
+      </div>
+      <div class="cell" id="8">
+        <p class='dateText' id='08'></p>
+      </div>
+      <div class="cell" id="9">
+        <p class='dateText' id='09'></p>
+      </div>
+      <div class="cell" id="10">
+        <p class='dateText' id='010'></p>
+      </div>
+      <div class="cell" id="11">
+        <p class='dateText' id='011'></p>
+      </div>
+      <div class="cell" id="12">
+        <p class='dateText' id='012'></p>
+      </div>
+      <div class="cell" id="13">
+        <p class='dateText' id='013'></p>
+      </div>
+    </div>
+    <div class='row' id="002">
+      <div class="cell" id="14">
+        <p class='dateText' id='014'></p>
+      </div>
+      <div class="cell" id="15">
+        <p class='dateText' id='015'></p>
+      </div>
+      <div class="cell" id="16">
+        <p class='dateText' id='016'></p>
+      </div>
+      <div class="cell" id="17">
+        <p class='dateText' id='017'></p>
+      </div>
+      <div class="cell" id="18">
+        <p class='dateText' id='018'></p>
+      </div>
+      <div class="cell" id="19">
+        <p class='dateText' id='019'></p>
+      </div>
+      <div class="cell" id="20">
+        <p class='dateText' id='020'></p>
+      </div>
+    </div>
+    <div class='row' id="003">
+      <div class="cell" id="21">
+        <p class='dateText' id='021'></p>
+      </div>
+      <div class="cell" id="22">
+        <p class='dateText' id='022'></p>
+      </div>
+      <div class="cell" id="23">
+        <p class='dateText' id='023'></p>
+      </div>
+      <div class="cell" id="24">
+        <p class='dateText' id='024'></p>
+      </div>
+      <div class="cell" id="25">
+        <p class='dateText' id='025'></p>
+      </div>
+      <div class="cell" id="26">
+        <p class='dateText' id='026'></p>
+      </div>
+      <div class="cell" id="27">
+        <p class='dateText' id='027'></p>
+      </div>
+    </div>
+    <div class='row' id="004">
+      <div class="cell" id="28">
+        <p class='dateText' id='028'></p>
+      </div>
+      <div class="cell" id="29">
+        <p class='dateText' id='029'></p>
+      </div>
+      <div class="cell" id="30">
+        <p class='dateText' id='030'></p>
+      </div>
+      <div class="cell" id="31">
+        <p class='dateText' id='031'></p>
+      </div>
+      <div class="cell" id="32">
+        <p class='dateText' id='032'></p>
+      </div>
+      <div class="cell" id="33">
+        <p class='dateText' id='033'></p>
+      </div>
+      <div class="cell" id="34">
+        <p class='dateText' id='034'></p>
+      </div>
+    </div>
+    <div class='row' id="005">
+      <div class="cell" id="35">
+        <p class='dateText' id='035'></p>
+      </div>
+      <div class="cell" id="36">
+        <p class='dateText' id='036'></p>
+      </div>
+      <div class="cell" id="37">
+        <p class='dateText' id='037'></p>
+      </div>
+      <div class="cell" id="38">
+        <p class='dateText' id='038'></p>
+      </div>
+      <div class="cell" id="39">
+        <p class='dateText' id='039'></p>
+      </div>
+      <div class="cell" id="40">
+        <p class='dateText' id='040'></p>
+      </div>
+      <div class="cell" id="41">
+        <p class='dateText' id='041'></p>
+      </div>
+    </div>
+  </div>
+  <div class="taskSide">
+    <button type='button' id='buttonComplete'>Show Completed Tasks</button>
+    <div>To reset filters, set priority filter to first option, and hit "Filter"</div>
+    <div class='showItems'>
+      <div id = 'filterButtons'>
+      <select id='priorityFilter' class='priorityOptions'>
+        <option id='noPriorityFilter' value='none' >Sort By Priority (Or show all tasks)</option>
+        <option id='minimalPriorityFilter' value='minimal'>0</option>
+        <option id='lowPriorityFilter' value='low'> !</option>
+        <option id='midPriorityFilter' value='medium'> !!</option>
+        <option id='highPriorityFilter' value='high'>!!!</option>
+      </select>
+      <button id='filterPrior' type='button'>Filter</button>
+    </div>
+      <input type="text" id="filterInput" placeholder="Type Categories Here">
+    <button type="button" onclick="active.displayCategoryFilter();">Search By Category</button>
+      <div class='scroll'>
+        <ul id="output">
+        </ul>
+      </div>
+    </div>
+
+    <div class='taskAdder'>
+      <input id='taskName' class="taskName" placeholder="Enter Task Name Here">
+      <div class="inputDates">
+        <input id="inputDayDueDate" placeholder="Day">
+        <input id="inputMonthDueDate" placeholder="Month (Upper)">
+        <input id="inputYearDueDate" placeholder="Year">
+        <input id="taskCategory" placeholder="Category">
+      </div>
+
+      <div class="priorityButtonsGroup">
+        <select id='priority' class='priorityOptions'>
+          <option value='minimal'> 0 </option>
+          <option value='low'> !</option>
+          <option value='medium'> !!</option>
+          <option value='high'>!!!</option>
+        </select>
+      </div>
+      <button id='buttonSubmit' class="submitButton">Submit Task</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
