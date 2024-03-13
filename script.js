@@ -727,7 +727,7 @@ class Canvas {
   // Plays the main music that will be played as soon as the user interacts with the canvas
   playMainTheme() {
     // This conditional is used to only play the main music ONCE as soon as the user interacts with the canvas
-    if (this.musicPlaying === false) {
+    //if (this.musicPlaying === false) {
       this.mainMusic = new Audio('Audio/mainTheme.mp3');
       // This nested conditional loops the main music so it plays continuously
       if (typeof this.mainMusic.loop == 'boolean') {
@@ -738,7 +738,7 @@ class Canvas {
           this.currentTime = 0;
           this.play();
         }, false);
-      }
+      //}
       this.mainMusic.play();
       this.musicPlaying = true;
     }
