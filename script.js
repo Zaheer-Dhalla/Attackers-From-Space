@@ -730,22 +730,20 @@ class Canvas {
 playMainTheme() {
     // This conditional is used to only play the main music ONCE as soon as the user interacts with the canvas
     if (this.musicPlaying === false) {
-        // This nested conditional loops the main music so it plays continuously
-        if (typeof this.mainMusic.loop === 'boolean') {
-            this.mainMusic.loop = true;
-            this.mainMusic.play();
-            this.musicPlaying = true;
-        } else {
-            // Preserve the correct reference to the class instance
-            const self = this;
-            this.mainMusic.addEventListener('ended', function () {
-                // Use the preserved reference to access the class instance
-                self.mainMusic.currentTime = 0;
-                self.mainMusic.play();
-            }, false);
-        }
+      // This nested conditional loops the main music so it plays continuously
+      if (typeof this.mainMusic.loop == 'boolean') {
+        this.mainMusic.loop = true;
+        this.mainMusic.play();
+        this.musicPlaying = true;
+      }
+      else {
+        this.mainMusic.addEventListener('ended', function() {
+          this.currentTime = 0;
+          this.play();
+        }, false);
+      }
     }
-}
+  }
 
   // ---------- ON CLICK ACTIONS
   // This method should be called whenever any button is clicked on the screen
