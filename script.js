@@ -626,7 +626,7 @@ class Canvas {
     this.mainMusicPlaying = true;
     this.gameOverSound = new Audio('Audio/gameOverAudio.mp3');
 
-    this.mainMusic = new Audio('Audio/mainTheme.mp3');
+    
 
     // Hover Image Objects
     this.easyHover = new HoverImage('Images/Menu/1P_Hover.png');
@@ -730,6 +730,7 @@ class Canvas {
 playMainTheme() {
     // This conditional is used to only play the main music ONCE as soon as the user interacts with the canvas
     if (this.musicPlaying === false) {
+      this.mainMusic = new Audio('Audio/mainTheme.mp3');
       // This nested conditional loops the main music so it plays continuously
       if (typeof this.mainMusic.loop == 'boolean') {
         this.mainMusic.loop = true;
